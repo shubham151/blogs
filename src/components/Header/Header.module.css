@@ -1,0 +1,90 @@
+/* Navbar Styling */
+.navBar {
+    background-color: #FFFCFF !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    width: 100vw;
+}
+
+/* Brand/Logo Styling */
+.brand {
+    transition: opacity 0.2s ease;
+}
+
+.brand:hover {
+    opacity: 0.8;
+}
+
+.logo {
+    height: 36px !important;
+    width: auto;
+}
+
+/* Navigation Link Styling */
+.navLink {
+    color: #374151 !important;
+    font-weight: 500 !important;
+    font-size: 0.95rem !important;
+    display: flex !important;
+    align-items: center !important;
+    transition: color 0.2s ease-in-out !important;
+    padding: 0.75rem 1rem !important;
+}
+
+.navLink:hover,
+.navLink:focus {
+    color: #00B894 !important;
+}
+
+.dropdownIcon {
+    width: 12px;
+    height: 12px;
+    transition: transform 0.2s ease;
+}
+
+.navLink:hover .dropdownIcon {
+    transform: translateY(1px);
+}
+
+/* Mobile Responsive Adjustments */
+@media (max-width: 991.98px) {
+
+    /* Mobile menu spacing */
+    .navLink {
+        padding: 0.75rem 0 !important;
+        border-bottom: 1px solid #f1f3f4;
+    }
+
+    .navLink:last-child {
+        border-bottom: none;
+    }
+}
+
+/* Small device adjustments */
+@media (max-width: 575.98px) {
+    .logo {
+        height: 32px !important;
+    }
+
+    .primaryBtn {
+        font-size: 0.9rem !important;
+        padding: 0.75rem 1.25rem !important;
+    }
+
+    .clientLoginBtn {
+        font-size: 0.9rem !important;
+    }
+}
+
+/* Extra small devices */
+@media (max-width: 375px) {
+    .customHeader {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .logo {
+        height: 28px !important;
+    }
+}
