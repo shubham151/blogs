@@ -1,0 +1,196 @@
+/* Section Container */
+.ctaSection {
+    padding: 6rem 0;
+    background: linear-gradient(90deg, #C3FF00 0%, #00AB80 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* Content Container */
+.ctaContent {
+    position: relative;
+    z-index: 2;
+    color: white;
+}
+
+/* Heading Group */
+.headingGroup {
+    margin-bottom: 0;
+}
+
+.mainTitle {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    letter-spacing: -0.025em;
+}
+
+.darkText {
+    color: #231F20;
+}
+
+.lightText {
+    color: white;
+}
+
+.titleUnderline {
+    width: 220px;
+    height: 4px;
+    background: #00AB80;
+    border-radius: 2px;
+}
+
+/* Subtitle */
+.subtitle {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #2d3748;
+    margin-bottom: 0;
+    line-height: 1.3;
+}
+
+/* Description */
+.description {
+    font-size: 1.125rem;
+    color: #2d3748;
+    line-height: 1.7;
+    margin-bottom: 0;
+    opacity: 0.9;
+}
+
+/* CTA Buttons */
+.ctaButtons {
+    gap: 2rem !important;
+}
+
+/* Custom button styling */
+.primaryButton {
+    background: #00AB80 !important;
+    border-color: #00AB80 !important;
+    color: white !important;
+    font-size: 1.125rem !important;
+    font-weight: 600 !important;
+    padding: 1rem 2.5rem !important;
+    border-radius: 0.75rem !important;
+    box-shadow: 0 4px 16px rgba(0, 160, 133, 0.4) !important;
+    white-space: nowrap !important;
+    transition: all 0.3s ease !important;
+}
+
+.primaryButton:hover {
+    background: #008f7a !important;
+    border-color: #008f7a !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 8px 25px rgba(0, 160, 133, 0.5) !important;
+    color: white !important;
+}
+
+.secondaryButton {
+    background: transparent !important;
+    border: none !important;
+    color: #2d3748 !important;
+    font-size: 1.125rem !important;
+    font-weight: 600 !important;
+    padding: 1rem 1.5rem !important;
+    white-space: nowrap !important;
+}
+
+.secondaryButton:hover {
+    background: transparent !important;
+    color: #1a202c !important;
+    transform: translateX(4px) !important;
+}
+
+.secondaryButton:hover .arrowIcon {
+    transform: translateX(2px);
+}
+
+.arrowIcon {
+    transition: transform 0.3s ease;
+}
+
+@media (max-width: 767.98px) {
+    .ctaSection {
+        padding: 4rem 0;
+    }
+
+    .mainTitle {
+        font-size: 2.75rem;
+    }
+
+    .subtitle {
+        font-size: 1.5rem;
+    }
+
+    .description {
+        font-size: 1rem;
+    }
+
+    .ctaButtons {
+        gap: 1.5rem !important;
+    }
+
+    .primaryButton {
+        width: 100% !important;
+        max-width: 300px !important;
+    }
+
+    .secondaryButton {
+        width: auto !important;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .ctaSection {
+        padding: 3rem 0;
+    }
+
+    .mainTitle {
+        font-size: 2.25rem;
+    }
+
+    .subtitle {
+        font-size: 1.25rem;
+    }
+
+    .description {
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+
+    .titleUnderline {
+        width: 60px;
+        height: 3px;
+    }
+
+    .primaryButton {
+        padding: 0.875rem 2rem !important;
+        font-size: 1rem !important;
+    }
+
+    .secondaryButton {
+        font-size: 1rem !important;
+        padding: 0.875rem 1.25rem !important;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .ctaSection {
+        padding: 7rem 0;
+    }
+
+    .mainTitle {
+        font-size: 4rem;
+    }
+
+    .subtitle {
+        font-size: 2rem;
+    }
+
+    .description {
+        font-size: 1.25rem;
+    }
+}
