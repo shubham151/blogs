@@ -1,0 +1,235 @@
+/* Section Container */
+.marketingSection {
+    padding: 6rem 0;
+    background: #f8fafc;
+}
+
+/* Section Header */
+.sectionHeader {
+    position: relative;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    color: #1a202c;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.underline {
+    width: 120px;
+    height: 4px;
+    background: #00B894;
+    border-radius: 2px;
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.1;
+    color: #1a202c;
+    margin-bottom: 0;
+}
+
+.highlight {
+    color: #00B894;
+}
+
+.description {
+    font-size: 1.1rem;
+    color: #4a5568;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+/* Tab Navigation */
+.tabNavigation {
+    margin-bottom: 0;
+}
+
+
+/* Content Card */
+.contentCard {
+    background: linear-gradient(203.25deg, #D8DBE2 13.63%, #FFFCFF 81.93%);
+    border-radius: 1rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    border: 1px solid;
+    border-image-source: linear-gradient(203.25deg, #D8DBE2 13.63%, #FFFCFF 81.93%);
+
+
+}
+
+/* Chart Section */
+.chartSection {
+    position: relative;
+}
+
+.chartImage {
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    height: auto;
+}
+
+/* Text Section */
+.textSection {
+    position: relative;
+}
+
+.contentTitle {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #231F20;
+
+    line-height: 1.3;
+    margin-bottom: 0;
+}
+
+.contentDescription {
+    font-size: 1rem;
+    color: #231F20;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+/* Bullet Points */
+.bulletPoints {
+    margin-bottom: 0;
+}
+
+.bulletPoint {
+    font-size: 1rem;
+    color: #231F20;
+    margin-bottom: 1rem;
+    position: relative;
+    line-height: 1.5;
+    padding-bottom: 1rem;
+    font-weight: 600;
+    border-bottom: 1px solid #666666
+}
+
+.bulletPoint:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+
+/* Actions */
+.actions {
+    gap: 1.5rem !important;
+}
+
+/* Custom button styling */
+.primaryBtn {
+    padding: 0.875rem 2rem !important;
+    font-size: 1rem !important;
+}
+
+.primaryBtn:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 8px 25px rgba(0, 184, 148, 0.3) !important;
+}
+
+.secondaryBtn {
+    color: #00B894 !important;
+    background: transparent !important;
+    border: none !important;
+    font-weight: 500 !important;
+    font-size: 1rem !important;
+    padding: 0.875rem 1rem !important;
+}
+
+.secondaryBtn:hover {
+    color: #00a085 !important;
+    background: transparent !important;
+    transform: translateX(3px) !important;
+}
+
+.secondaryBtn:hover .arrowIcon {
+    transform: translateX(2px);
+}
+
+.arrowIcon {
+    transition: transform 0.2s ease-in-out;
+}
+
+.tabButton {
+    background: #FFFCFF !important;
+    border: 1px solid #D8DBE2 !important;
+    color: #666666 !important;
+}
+
+.tabButton.active {
+    background: linear-gradient(203.25deg, #666666 13.63%, #000000 81.93%) !important;
+    color: white !important;
+}
+
+.tabButton:hover:not(.active) {
+    background: transparent !important;
+    border-color: #1a202c !important;
+    color: #1a202c !important;
+}
+
+
+.tabButton:focus {
+    outline: none !important;
+    box-shadow: 0 0 0 1px rgba(26, 32, 44, 0.2) !important;
+}
+
+@media (max-width: 991.98px) {
+    .title {
+        font-size: 2.5rem;
+    }
+
+    .contentTitle {
+        font-size: 1.75rem;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .marketingSection {
+        padding: 4rem 0;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .contentTitle {
+        font-size: 1.5rem;
+    }
+
+    .tabButton {
+        padding: 0.625rem 1.25rem;
+        font-size: 0.9rem;
+    }
+
+    .primaryBtn {
+        width: 100% !important;
+        max-width: 280px !important;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .marketingSection {
+        padding: 3rem 0;
+    }
+
+    .title {
+        font-size: 1.75rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+    }
+
+    .underline {
+        width: 80px;
+        height: 3px;
+    }
+
+    .tabButton {
+        padding: 0.5rem 1rem;
+        font-size: 0.85rem;
+    }
+}
