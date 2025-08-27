@@ -1,0 +1,142 @@
+/* Section Container */
+.faqSection {
+    padding: 5rem 0;
+}
+
+/* Section Header */
+.sectionTitle {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #2d3748;
+    margin-bottom: 0;
+    line-height: 1.2;
+}
+
+/* FAQ Items */
+.faqItem {
+    background: linear-gradient(203.25deg, #D8DBE2 13.63%, #FFFCFF 81.93%);
+    border-radius: 0.75rem;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    transition: box-shadow 0.2s ease;
+    border: 1px solid #e2e8f0;
+    margin-bottom: 1rem;
+}
+
+.faqItem:last-child {
+    margin-bottom: 0;
+}
+
+.faqItem:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* FAQ Question Button */
+.faqQuestion {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    background: inherit;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    transition: background-color 0.2s ease;
+}
+
+.faqQuestion:hover {
+    background: #f8fafc;
+}
+
+.faqQuestion.open {
+    background: #f8fafc;
+}
+
+.questionText {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #2d3748;
+    line-height: 1.4;
+    padding-right: 2rem;
+}
+
+/* Toggle Icon */
+.toggleIcon {
+    color: #00B894;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    flex-shrink: 0;
+}
+
+.toggleIcon.rotated {
+    transform: rotate(180deg);
+}
+
+/* FAQ Answer */
+.faqAnswer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    background: #f8fafc;
+}
+
+.faqAnswer.expanded {
+    max-height: 400px;
+}
+
+.answerContent {
+    padding: 0 2rem 2rem 2rem;
+    /* border-top: 1px solid #e2e8f0; */
+}
+
+.answerContent p {
+    color: #4a5568;
+    line-height: 1.7;
+    font-size: 1rem;
+}
+
+
+@media (max-width: 767.98px) {
+    .faqSection {
+        padding: 3rem 0;
+    }
+
+    .sectionTitle {
+        font-size: 2.25rem;
+    }
+
+    .faqQuestion {
+        padding: 1.5rem;
+    }
+
+    .questionText {
+        font-size: 1rem;
+        padding-right: 1rem;
+    }
+
+    .answerContent {
+        padding: 0 1.5rem 1.5rem 1.5rem;
+    }
+
+    .answerContent p {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .sectionTitle {
+        font-size: 1.875rem;
+    }
+
+    .faqQuestion {
+        padding: 1.25rem;
+    }
+
+    .questionText {
+        font-size: 0.95rem;
+    }
+
+    .answerContent {
+        padding: 0 1.25rem 1.25rem 1.25rem;
+    }
+}
