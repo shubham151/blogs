@@ -24,8 +24,8 @@
 
 /* Button Variants */
 .button--primary {
-    background: #00B894;
-    border-color: #00B894;
+    background: #00AB80;
+    border-color: #00AB80;
     color: white;
     font-weight: 600;
 }
@@ -55,13 +55,13 @@
 
 .button--secondary:hover:not(.button--disabled) {
     background: #f9fafb;
-    color: #00B894;
+    color: #00AB80;
     text-decoration: none;
 }
 
 .button--secondary:active:not(.button--disabled) {
     background: #f3f4f6;
-    color: #00B894;
+    color: #00AB80;
 }
 
 .button--outline {
@@ -73,15 +73,15 @@
 
 .button--outline:hover:not(.button--disabled) {
     background: #f9fafb;
-    border-color: #00B894;
-    color: #00B894;
+    border-color: #00AB80;
+    color: #00AB80;
     text-decoration: none;
 }
 
 .button--outline:active:not(.button--disabled) {
     background: #f3f4f6;
-    border-color: #00B894;
-    color: #00B894;
+    border-color: #00AB80;
+    color: #00AB80;
 }
 
 /* Button Sizes */
