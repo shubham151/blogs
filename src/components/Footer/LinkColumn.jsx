@@ -3,7 +3,7 @@ import styles from "./Footer.module.css";
 
 const LinkColumn = ({ data, columnKey }) => {
   return (
-    <div className="col-6 col-md-3 col-lg-2 mb-4 mb-lg-0">
+    <div className="col-6 col-lg-3 mb-4 mb-lg-0">
       <h3 className={styles.columnTitle}>{data.title}</h3>
       <ul className={styles.linkList}>
         {data.links.map((link, index) => (

@@ -3,7 +3,7 @@ import styles from "./Footer.module.css";
 
 const CompanySection = ({ company, socialLinks }) => {
   return (
-    <div className="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0">
+    <div className="col-12">
       <div className={styles.companySection}>
         <div className={styles.footerLogo}>
           <img src={logo} alt="Company Logo" className={styles.logoImage} />

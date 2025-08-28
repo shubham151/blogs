@@ -5,6 +5,10 @@
     padding: 4rem 0 0;
 }
 
+.footerContent {
+    padding: 0 1.5rem;
+}
+
 /* Company Section */
 .companySection {
     max-width: none;
@@ -111,7 +115,6 @@
 .newsletterForm {
     width: 100%;
     max-width: 400px;
-    margin: 0 auto;
 }
 
 .emailInput {
@@ -167,14 +170,20 @@
 .copyright {
     color: #718096;
     font-size: 0.875rem;
-    text-align: center;
 }
 
-/* Responsive Design */
+@media (min-width: 992px) {
+    .companySection {
+        padding-right: 3rem;
+    }
+}
+
 @media (max-width: 991.98px) {
     .companySection {
-        max-width: none;
         text-align: center;
+        margin-top: 2rem;
+        padding-top: 2rem;
+        border-top: 1px solid #e2e8f0;
     }
 
     .socialLinks {
@@ -182,11 +191,12 @@
     }
 
     .columnTitle {
-        text-align: center;
+        text-align: left;
+        margin-bottom: 1rem;
     }
 
     .linkList {
-        text-align: center;
+        text-align: left;
     }
 }
 
@@ -196,24 +206,33 @@
     }
 
     .newsletterSection {
-        padding: 1.5rem;
+        padding: 2rem 1rem;
         text-align: center;
     }
 
     .newsletterText {
         text-align: center;
-        margin-bottom: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .newsletterForm {
+        margin: 0 auto 1.5rem auto;
     }
 
     .legalLinks {
         justify-content: center !important;
         text-align: center;
     }
+
+    .copyright {
+        text-align: center;
+        margin-top: 0.5rem;
+    }
 }
 
 @media (max-width: 575.98px) {
     .newsletterSection {
-        margin: 0 -15px;
+        padding: 1.5rem 1rem;
     }
 
     .legalLinks {
