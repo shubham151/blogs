@@ -1,6 +1,6 @@
 import Button from "../Button/Button";
 import personBook from "../../assets/person-book.svg";
-import { HeaderConstant } from "./HeaderConstant";
+import { ClientLoginLabel, BookDiscoveryCallLabel } from "./HeaderConstant";
 
 const HeaderActions = () => {
   return (
@@ -9,11 +9,11 @@ const HeaderActions = () => {
         variant="secondary"
         startIcon={<img src={personBook} alt="user" width="16" height="16" />}
       >
-        {HeaderConstant.ClientLoginLabel}
+        {ClientLoginLabel}
       </Button>
 
       <Button variant="primary" to="/book-discovery-call" size="lg">
-        {HeaderConstant.BookDiscoveryCallLabel}
+        {BookDiscoveryCallLabel}
       </Button>
     </div>
   );
