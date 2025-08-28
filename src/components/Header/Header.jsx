@@ -14,6 +14,7 @@ const navigationItems = [
   { label: "Company", href: "/company", hasDropdown: true },
   { label: "Resources", href: "/resources", hasDropdown: true },
   { label: "Learn", href: "/learn", hasDropdown: true },
+  { label: "Blogs", href: "/blog", hasDropdown: false },
 ];
 
 /**
