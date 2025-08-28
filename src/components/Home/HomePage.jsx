@@ -18,7 +18,6 @@ const HomePage = () => {
       <FAQ />
       <Testimonials />
       <CTA />
-      <BlogPage />
     </div>
   );
 };
