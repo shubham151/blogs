@@ -1,12 +1,14 @@
 /* Section Container */
 .marketingSection {
-    padding: 6rem 0;
+    padding: 6rem 0rem;
     background: #f8fafc;
+    width: 100vw;
 }
 
 /* Section Header */
 .sectionHeader {
     position: relative;
+    width: 100vw;
 }
 
 .subtitle {
@@ -45,6 +47,7 @@
 /* Tab Navigation */
 .tabNavigation {
     margin-bottom: 0;
+    width: 100vw;
 }
 
 
@@ -55,8 +58,7 @@
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
     border: 1px solid;
     border-image-source: linear-gradient(203.25deg, #D8DBE2 13.63%, #FFFCFF 81.93%);
-
-
+    width: 100vw;
 }
 
 /* Chart Section */

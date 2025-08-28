@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import TestimonialCard from "./TestimonialCard";
 import CarouselNavigation from "./CarouselNavigation";
 import styles from "./Testimonials.module.css";
@@ -19,10 +19,6 @@ const Testimonials = () => {
 
   const goToNext = () => {
     setCurrentSlide((prev) => Math.min(TESTIMONIALS_DATA.length - 1, prev + 1));
-  };
-
-  const getTranslateX = () => {
-    return currentSlide * (CAROUSEL_CONFIG.cardWidth + CAROUSEL_CONFIG.gap);
   };
 
   return (
@@ -46,7 +42,7 @@ const Testimonials = () => {
                 <div
                   className={styles.carouselTrack}
                   style={{
-                    transform: `translateX(-${getTranslateX()}px)`,
+                    transform: `translateX(calc(-${currentSlide} * (var(--card-width) + var(--card-gap))))`,
                   }}
                 >
                   {TESTIMONIALS_DATA.map((testimonial, index) => (

@@ -3,7 +3,7 @@
     padding: 6rem 0;
     background: #ffffff;
     position: relative;
-    overflow: hidden;
+    width: 100vw;
 }
 
 /* Background USA Map */

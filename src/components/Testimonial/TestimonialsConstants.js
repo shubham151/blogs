@@ -39,7 +39,5 @@ export const TESTIMONIALS_DATA = [
 ];
 
 export const CAROUSEL_CONFIG = {
-  cardWidth: 350,
-  gap: 20,
   initialSlide: 0,
 };

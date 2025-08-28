@@ -9,8 +9,8 @@ const TabContent = ({ content }) => {
   return (
     <div className={`${styles.contentCard} p-4 p-lg-5`}>
       <div className="row align-items-center g-4 g-lg-5">
-        {/* Chart Section */}
-        <div className="col-12 col-lg-6 order-2 order-lg-1">
+        {/* Image Section */}
+        <div className="col-12 col-lg-6 order-1 order-lg-1">
           <div className={`${styles.chartSection} text-center`}>
             <img
               src={image}
@@ -21,7 +21,7 @@ const TabContent = ({ content }) => {
         </div>
 
         {/* Text Section */}
-        <div className="col-12 col-lg-6 order-1 order-lg-2">
+        <div className="col-12 col-lg-6 order-2 order-lg-2">
           <div className={styles.textSection}>
             <h3 className={`${styles.contentTitle} mb-4`}>{title}</h3>
 
