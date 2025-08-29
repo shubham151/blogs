@@ -31,7 +31,6 @@
 
 .carouselWrapper {
     position: relative;
-    overflow: hidden;
     border-radius: 1rem;
 }
 
@@ -59,7 +58,7 @@
 .testimonialCard.active {
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
     border-color: #00B894;
-    transform: translateY(-5px);
+    transform: translateY(5px);
 }
 
 .testimonialCard:hover {
