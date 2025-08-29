@@ -2,8 +2,7 @@
 .navBar {
     background-color: #FFFCFF !important;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
+    padding: 5rem 0;
     width: 100vw;
 }
 
@@ -52,7 +51,6 @@
 
     /* Mobile menu spacing */
     .navLink {
-        padding: 0.75rem 0 !important;
         border-bottom: 1px solid #f1f3f4;
     }
 

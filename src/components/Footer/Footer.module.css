@@ -2,7 +2,8 @@
 .footer {
     background: white;
     color: #231F20;
-    padding: 4rem 0 0;
+    padding: 5rem 0 0;
+    width: 100%;
 }
 
 .footerContent {

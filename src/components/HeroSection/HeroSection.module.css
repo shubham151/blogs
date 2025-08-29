@@ -1,9 +1,6 @@
 /* Hero Section Container */
 .heroSection {
-    position: relative;
-    background: #ffffff;
-    min-height: 90vh;
-    /* padding: 2rem 0; */
+    padding: 5rem 0;
     width: 100vw;
 }
 

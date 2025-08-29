@@ -2,8 +2,8 @@
 .ctaSection {
     padding: 6rem 0;
     background: linear-gradient(90deg, #C3FF00 0%, #00AB80 100%);
-    position: relative;
-    overflow: hidden;
+    z-index: 1;
+    pointer-events: none;
 }
 
 
@@ -173,24 +173,5 @@
     .secondaryButton {
         font-size: 1rem !important;
         padding: 0.875rem 1.25rem !important;
-    }
-}
-
-
-@media (min-width: 1200px) {
-    .ctaSection {
-        padding: 7rem 0;
-    }
-
-    .mainTitle {
-        font-size: 4rem;
-    }
-
-    .subtitle {
-        font-size: 2rem;
-    }
-
-    .description {
-        font-size: 1.25rem;
     }
 }

@@ -1,8 +1,6 @@
 /* Section Container */
 .caseStudiesSection {
     padding: 5rem 0;
-    background: #ffffff;
-    overflow: hidden;
     width: 100vw;
 }
 
@@ -38,14 +36,16 @@
 /* Carousel Container */
 .carouselContainer {
     position: relative;
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
+    padding: 0 1rem;
 }
 
 .carouselWrapper {
     overflow: hidden;
     position: relative;
     width: 100%;
+    margin: 0 -0.5rem;
 }
 
 .carouselTrack {
@@ -53,6 +53,7 @@
     gap: 1.25rem;
     transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
     width: fit-content;
+    padding: 0 0.5rem;
 }
 
 /* Case Study Cards */
@@ -98,6 +99,7 @@
     flex-grow: 1;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 
 .cardTitle {
@@ -187,6 +189,10 @@
 
 /* Responsive Design */
 @media (max-width: 1199.98px) {
+    .carouselContainer {
+        padding: 0 0.75rem;
+    }
+
     .carouselTrack {
         gap: 1rem;
     }
@@ -204,6 +210,10 @@
 
     .sectionTitle {
         font-size: 3rem;
+    }
+
+    .carouselContainer {
+        padding: 0 0.5rem;
     }
 
     .caseStudyCard {
@@ -227,6 +237,10 @@
 
     .titleUnderline {
         width: 150px;
+    }
+
+    .carouselContainer {
+        padding: 0 0.25rem;
     }
 
     .caseStudyCard {
@@ -265,6 +279,21 @@
     .titleUnderline {
         width: 120px;
         height: 2px;
+    }
+
+    .carouselContainer {
+        padding: 0;
+        margin: 0 -15px;
+        /* Negative margin to use full container width */
+    }
+
+    .carouselWrapper {
+        margin: 0;
+    }
+
+    .carouselTrack {
+        padding: 0 15px;
+        /* Add padding back to track */
     }
 
     .caseStudyCard {
