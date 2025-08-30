@@ -1,12 +1,55 @@
-# React + Vite
+# Blog Management System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive React application with WordPress REST API integration.
 
-Currently, two official plugins are available:
+## Setup Instructions
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Prerequisites
 
-## Expanding the ESLint configuration
+- Node.js (version 16+)
+- npm
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Local Development
+
+```bash
+# Clone the repository
+git clone https://github.com/shubham151/blogs
+cd blogs
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+```
+
+The application will be available at `http://localhost:5173`
+
+### Build for Production
+
+```bash
+npm run build
+npm run preview
+```
+
+## Features Implemented
+
+### Core Requirements
+
+- Responsive design across all devices
+- WordPress REST API integration (https://futureoffounders.com/wp-json/wp/v2/posts)
+- Dynamic content fetching and display
+- Mobile-first responsive approach
+
+### Additional Features
+
+- **Search and Filtering:** Real-time search with sorting options (latest, oldest, title)
+- **Pagination:** Efficient content navigation with page controls
+
+### Technical Enhancements
+
+- Custom React hooks for state management
+- CSS Modules for scoped styling
+- Memoized components for performance
+- Error boundaries and fallback states
