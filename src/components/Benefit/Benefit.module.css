@@ -105,77 +105,13 @@
     flex-grow: 1;
 }
 
-@media (max-width: 1199.98px) {
+@media (max-width: 786px) {
     .usaMap {
-        width: 45%;
-        right: -5%;
-    }
-}
-
-@media (max-width: 991.98px) {
-    .benefitSection {
-        padding: 4rem 0;
-    }
-
-    .sectionTitle {
-        font-size: 2.25rem;
-    }
-
-    .usaMap {
-        opacity: 0.03;
-        width: 60%;
-        right: -15%;
-    }
-}
-
-@media (max-width: 767.98px) {
-    .benefitSection {
-        padding: 3rem 0;
-    }
-
-    .sectionTitle {
-        font-size: 2rem;
-    }
-
-    .titleUnderline {
-        width: 150px;
-    }
-
-    .benefitCard {
-        padding: 2rem 1.5rem;
-    }
-}
-
-@media (max-width: 575.98px) {
-    .sectionTitle {
-        font-size: 1.75rem;
-    }
-
-    .titleUnderline {
-        width: 120px;
-        height: 2px;
-    }
-
-    .benefitCard {
-        padding: 1.5rem;
-    }
-
-    .cardIcon {
-        width: 70px;
-        height: 70px;
-        margin-bottom: 1.5rem;
-    }
-
-    .iconImage {
-        width: 35px;
-        height: 35px;
-    }
-
-    .cardTitle {
-        font-size: 1.25rem;
-    }
-
-    .cardDescription {
-        font-size: 0.9rem;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        left: 50%;
+        top: 50%;
+        opacity: 0.5;
     }
 }

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import SectionHeader from "./SectionHeader";
 import TabNavigation from "./TabNavigation";
 import TabContent from "./TabContent";

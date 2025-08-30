@@ -364,11 +364,12 @@
 }
 
 .readMoreButton:hover .arrowIcon {
-    transform: translateX(2px);
+    transform: translateX(2.5);
 }
 
 .arrowIcon {
     transition: transform 0.2s ease;
+    transform: scale(1.5);
 }
 
 /* Image Overlay Effects */

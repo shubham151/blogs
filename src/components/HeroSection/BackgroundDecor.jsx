@@ -7,12 +7,12 @@ const BackgroundDecor = () => {
       <img
         src={polygonLines}
         alt=""
-        className={`${styles.polygonLines} ${styles.leftSide} d-none d-lg-block`}
+        className={`${styles.polygonLines} ${styles.leftSide}`}
       />
       <img
         src={polygonLines}
         alt=""
-        className={`${styles.polygonLines} ${styles.rightSide} d-none d-lg-block`}
+        className={`${styles.polygonLines} ${styles.rightSide}`}
       />
     </div>
   );

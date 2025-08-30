@@ -8,11 +8,7 @@ const BenefitSection = () => {
     <section className={styles.benefitSection}>
       {/* Background USA Map */}
       <div className={styles.backgroundDecor}>
-        <img
-          src={usaMap}
-          alt=""
-          className={`${styles.usaMap} d-none d-lg-block`}
-        />
+        <img src={usaMap} alt="" className={styles.usaMap} />
       </div>
 
       <div className="container-fluid">

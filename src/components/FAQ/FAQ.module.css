@@ -97,9 +97,9 @@
 }
 
 
-@media (max-width: 767.98px) {
+@media (max-width: 786px) {
     .faqSection {
-        padding: 3rem 0;
+        padding: 3rem 1rem 3rem 0;
     }
 
     .sectionTitle {
@@ -121,23 +121,5 @@
 
     .answerContent p {
         font-size: 0.95rem;
-    }
-}
-
-@media (max-width: 575.98px) {
-    .sectionTitle {
-        font-size: 1.875rem;
-    }
-
-    .faqQuestion {
-        padding: 1.25rem;
-    }
-
-    .questionText {
-        font-size: 0.95rem;
-    }
-
-    .answerContent {
-        padding: 0 1.25rem 1.25rem 1.25rem;
     }
 }
