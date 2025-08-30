@@ -14,28 +14,24 @@ const NewsletterSection = ({ newsletter, legal, copyright }) => {
 
   return (
     <div className={styles.newsletterSection}>
-      <div className="container-fluid">
+      <div className="container-fluid pt-4">
         <div className="row justify-content-center">
           <div className="col-12 col-xl-10">
             <div className="row align-items-center">
-              {/* Newsletter Text */}
-              <div className="col-12 col-md-3 mb-3 mb-md-0">
+              {/* Newsletter Text + Form (stacked) */}
+              <div className="col-12 col-md-6 mb-3 mb-md-0">
                 <p className={styles.newsletterText}>{newsletter.text}</p>
-              </div>
-
-              {/* Newsletter Form */}
-              <div className="col-12 col-md-6 mb-3 mb-md-0 d-flex justify-content-center">
                 <form
                   className={styles.newsletterForm}
                   onSubmit={handleEmailSubmit}
                 >
-                  <div className="d-flex">
+                  <div className="d-flex flex-row flex-sm-row mt-2">
                     <input
                       type="email"
                       placeholder={newsletter.placeholder}
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
-                      className={styles.emailInput}
+                      className={` form-control ${styles.emailInput}`}
                       required
                     />
                     <Button
@@ -49,10 +45,10 @@ const NewsletterSection = ({ newsletter, legal, copyright }) => {
                 </form>
               </div>
 
-              {/* Legal Links */}
-              <div className="col-12 col-md-3">
+              {/* Legal Links + Copyright */}
+              <div className="col-12 col-md-6 text-center text-md-end">
                 <div
-                  className={`${styles.legalLinks} d-flex flex-wrap justify-content-md-end justify-content-center gap-2`}
+                  className={`${styles.legalLinks} d-flex flex-wrap justify-content-center justify-content-md-end gap-3`}
                 >
                   {legal.map((link, index) => (
                     <Link
@@ -63,12 +59,8 @@ const NewsletterSection = ({ newsletter, legal, copyright }) => {
                       {link.label}
                     </Link>
                   ))}
-                  <span
-                    className={`${styles.copyright} w-100 text-md-end text-center mt-1`}
-                  >
-                    {copyright}
-                  </span>
                 </div>
+                <div className={`${styles.copyright} mt-2`}>{copyright}</div>
               </div>
             </div>
           </div>
