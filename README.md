@@ -2,6 +2,9 @@
 
 A responsive React application with WordPress REST API integration.
 
+- **Live Demo:** https://blogs-black-ten.vercel.app/
+- **Repository:** https://github.com/shubham151/blogs
+
 ## Setup Instructions
 
 ### Prerequisites
@@ -53,3 +56,17 @@ npm run preview
 - CSS Modules for scoped styling
 - Memoized components for performance
 - Error boundaries and fallback states
+
+## API Integration
+
+- Fetches blog posts with pagination
+- Implements search functionality
+- Handles individual post retrieval
+- Includes error handling and loading states
+
+## Assumptions Made
+
+- **WordPress API Structure:** Assumed standard WordPress REST API response format
+- **Featured Media:** Used placeholder images due to API limitations with featured media URLs
+- **Categories:** Implemented basic category display with fallback text
+- **Content Safety:** Assumed content is properly sanitized from WordPress
